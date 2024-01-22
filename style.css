@@ -213,15 +213,20 @@ ul{
 .background-styler{
     height: 100vh;
     width: 100%;
-    background-color: #f0c2876b;
+    background-color: #ebd7be34;
 }
 
+.headliner{
+    mix-blend-mode: difference;
+    padding-top: 1%;
+    text-align: center;
+}
 .circle{
     top: 20.5%;
     position: relative;
     width: 20%;
     height: 20%;
-    background-color: #f5290ef3; 
+    background-color: #f5290e67; 
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
     transform: rotate(90deg);
@@ -247,7 +252,7 @@ ul{
     position:relative;
     width: 30%;
     height: 30%;
-    background-color: #f10a0a;
+    background-color: #f5290e67;
     border-radius: 50%;
     bottom:-50% ;
     left: 70%;
@@ -263,50 +268,42 @@ ul{
     width: 70%;
     height: 70%;
     border-radius: 50%;
-    background-color: #05ff11;
+    background-color: #fff;
 }
 
 .special-offers{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color:red;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: -7%;
+    justify-content: space-around;
+    margin-top: -8%;
 }
 
 .top-column{
-    display:flex;
-    float: left;
+    display: flex;
     flex-direction: row;
-    background-color: #05ff11;
-    /* width: 90%; */
-    height: auto;
-    justify-content: space-evenly;
-    gap: 3%;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 30%;
+    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
-.left-menu{
-    border: 1px solid #ccc;
-    border-radius: 0.5em;
+.left-side{
+    padding: 20px;
 }
 
-.right-menu img {
-    width: 10%;
-    height: auto;
-    opacity: 0.9;
-    border-radius: 10px; 
+.right-side{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
 }
 
-.left-menu{
-    float: left;
+.right-side img{
     width: 100%;
-    margin-top: 5%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
 }
-
 
 
 
@@ -372,7 +369,17 @@ ul{
         width: 60%;
         height: 60%;
     }
+
+    .special-offers{
+        display: grid;
+        gap: 5%;
+    }
     
+    .top-column{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -429,6 +436,18 @@ ul{
         top: 55%;
         width: 60%;
         height: 60%;
+    }
+
+    .special-offers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+    }
+    
+    .top-column{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
     }
     
     
