@@ -7,7 +7,7 @@
 
 header{
     height: fit-content;
-    background: #fff url(img/food-background1.jpg) no-repeat right;
+    background: url(../img/food-background1.jpg) no-repeat right;
     background-size:cover;
 }
 
